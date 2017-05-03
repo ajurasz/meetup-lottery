@@ -5,6 +5,7 @@ const api = require('./api');
 
 const production = process.env.NODE_ENV === 'production';
 const unit = process.env.NODE_ENV === 'unit';
+const port = process.env.PORT || 5000;
 
 if (! (production || unit)) {
     const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -38,8 +39,8 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/../client/dist/index.html');
 });
 
-http.listen(5000, function () {
-    console.log('listening on port 5000');
+http.listen(port, function () {
+    console.log(`listening on port ${port}`);
 });
 
 module.exports = app;

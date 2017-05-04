@@ -10,6 +10,10 @@
     "build:dev": "webpack --progress --colors --watch",
     "build:prod": "NODE_ENV=production webpack --progress --colors"
   },
+  "engines": {
+    "node": "7.4.0",
+    "npm": "4.0.5"
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",

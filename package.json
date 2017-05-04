@@ -6,7 +6,6 @@
   "scripts": {
     "test": "NODE_ENV=unit mocha './**/*.spec.js'",
     "test:watch": "npm test -- --watch",
-    "postinstall": "npm run build:prod",
     "start": "babel-node server/server",
     "build:dev": "webpack --progress --colors --watch",
     "build:prod": "NODE_ENV=production webpack --progress --colors"
@@ -30,8 +29,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "request": "^2.81.0",
-    "underscore": "^1.8.3",
-    "webpack": "^1.13.3"
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
@@ -52,7 +50,8 @@
     "redux-immutable-state-invariant": "^2.0.0",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
-    "url-loader": "^0.5.8",    
+    "url-loader": "^0.5.8",
+    "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
   }

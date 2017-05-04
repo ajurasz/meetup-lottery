@@ -16,7 +16,8 @@ let plugins = [
 if (production) {
     plugins = plugins.concat([
 
-        new CleanPlugin('./client/dist/assets'),
+        new CleanPlugin('./client/dist/assets/css'),
+        new CleanPlugin('./client/dist/assets/js'),
 
         // This plugin looks for similar chunks and files
         // and merges them for better caching by the user

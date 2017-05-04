@@ -2,6 +2,7 @@ var chai = require('chai');
 var expect = require('chai').expect;
 var chaiHttp = require('chai-http');
 var nock = require('nock');
+var moment = require('moment');
 
 chai.use(chaiHttp);
 
@@ -171,7 +172,7 @@ describe('/api', function() {
               {
                 'id': 1,
                 'name': groupName,
-                'date': '21-04-2017 17:30'
+                'date': moment(1492788600000).format('DD-MM-YYYY HH:mm')
               }
             );
             done();

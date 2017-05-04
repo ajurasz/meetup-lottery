@@ -18,6 +18,7 @@ if (production) {
 
         new CleanPlugin('./client/dist/assets/css'),
         new CleanPlugin('./client/dist/assets/js'),
+        new CleanPlugin('./client/dist/assets/**.*'),
 
         // This plugin looks for similar chunks and files
         // and merges them for better caching by the user

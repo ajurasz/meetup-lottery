@@ -64,8 +64,8 @@ module.exports = {
         jquery: 'jQuery'
     },    
     output: {
-        path: path.resolve(__dirname, 'client/dist/assets'),
-        publicPath: '/assets',
+        path: path.resolve(__dirname, 'client/dist/assets/'),
+        publicPath: '/assets/',
         filename: 'js/bundle.js'
     },
     module: {

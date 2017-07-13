@@ -11,7 +11,7 @@
     "build:prod": "NODE_ENV=production webpack --progress --colors"
   },
   "engines": {
-    "node": "7.4.0",
+    "node": "7.10.x",
     "npm": "4.0.5"
   },  
   "keywords": [],
